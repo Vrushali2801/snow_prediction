@@ -1,23 +1,27 @@
 # Python
 __pycache__/
-*.py[cod]
-*$py.class
-
-# Jupyter
+*.pyc
+*.pyo
+*.pyd
 .ipynb_checkpoints/
 
-# Packaging
-dist/
-build/
-*.egg-info/
-
-# Virtualenvs
-.venv/
+# Virtual env
 venv/
-env/
-ENV/
 .env/
 
-# OS/editor
-.DS_Store
+# VS Code
 .vscode/
+
+# Data (ignore large files)
+data/external/**
+data/interim/**
+data/processed/**
+
+# But keep small useful files (unignore with !)
+!data/interim/part1_task1.csv
+!data/interim/stations_ok.csv
+!data/processed/test_metrics_*.csv
+!data/processed/test_predictions_*.csv
+!data/processed/train.csv
+!data/processed/valid.csv
+!data/processed/test.csv
